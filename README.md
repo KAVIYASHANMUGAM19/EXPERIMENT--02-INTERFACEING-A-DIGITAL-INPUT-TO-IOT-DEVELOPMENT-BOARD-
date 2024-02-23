@@ -93,6 +93,7 @@ void irpair()
   if(IRSENSOR==0)
   
   {
+     
       HAL_GPIO_Writepin(GPIOA, GPIO_PIN_0, RESET);
       
       HAL_Delay(1000);
@@ -106,6 +107,7 @@ void irpair()
   else
   
   {
+      
       HAL_GPIO_Writepin(GPIOA, GPIO_PIN_0, RESET);
       
               HAL_Delay(1000);
