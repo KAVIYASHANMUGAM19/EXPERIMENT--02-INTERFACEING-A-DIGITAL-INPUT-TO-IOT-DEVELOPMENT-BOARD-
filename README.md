@@ -101,7 +101,9 @@ void irpair()
               HAL_Delay(1000);
               
   }
+  
   else
+  
   {
       HAL_GPIO_Writepin(GPIOA, GPIO_PIN_0, RESET);
       
