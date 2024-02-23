@@ -74,6 +74,11 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 #include "stdio.h"
 bool IRSENSOR;
 void irpair()
+while(1)
+{
+   irpair();
+}
+void irpair()
 {
   IRSENSOR=HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_4);
   if(IRSENSOR==0)
@@ -88,8 +93,7 @@ void irpair()
       HAL_GPIO_Writepin(GPIOA, GPIO_PIN_0, RESET);
               HAL_Delay(1000);
   }
-
-
+ }
 
 ## Output  :
  LED OFF IMAGE
